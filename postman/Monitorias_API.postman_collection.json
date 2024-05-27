@@ -1,0 +1,281 @@
+{
+    "info": {
+      "name": "Monitorias API",
+      "_postman_id": "abc123",
+      "description": "Colección de API para las monitorias",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+      {
+        "name": "MonitorController",
+        "item": [
+          {
+            "name": "POST /monitors",
+            "request": {
+              "method": "POST",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": {
+                "mode": "raw",
+                "raw": "{\n  \"nombre\": \"Carlos\",\n  \"email\": \"carlos@example.com\"\n}"
+              },
+              "url": {
+                "raw": "http://localhost:3000/monitors",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "3000",
+                "path": ["monitors"]
+              }
+            }
+          },
+          {
+            "name": "GET /monitors",
+            "request": {
+              "method": "GET",
+              "url": {
+                "raw": "http://localhost:3000/monitors",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "3000",
+                "path": ["monitors"]
+              }
+            }
+          },
+          {
+            "name": "GET /monitors/:id",
+            "request": {
+              "method": "GET",
+              "url": {
+                "raw": "http://localhost:3000/monitors/1",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "3000",
+                "path": ["monitors", "1"]
+              }
+            }
+          },
+          {
+            "name": "PUT /monitors/:id",
+            "request": {
+              "method": "PUT",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": {
+                "mode": "raw",
+                "raw": "{\n  \"nombre\": \"Carlos 2\",\n  \"email\": \"carlos.2@example.com\"\n}"
+              },
+              "url": {
+                "raw": "http://localhost:3000/monitors/1",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "3000",
+                "path": ["monitors", "1"]
+              }
+            }
+          },
+          {
+            "name": "DELETE /monitors/:id",
+            "request": {
+              "method": "DELETE",
+              "url": {
+                "raw": "http://localhost:3000/monitors/1",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "3000",
+                "path": ["monitors", "1"]
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "CursoController",
+        "item": [
+          {
+            "name": "POST /cursos",
+            "request": {
+              "method": "POST",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": {
+                "mode": "raw",
+                "raw": "{\n  \"nombre\": \"Curso 1\",\n  \"descripcion\": \"Descripción del Curso 1\"\n}"
+              },
+              "url": {
+                "raw": "http://localhost:3000/cursos",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "3000",
+                "path": ["cursos"]
+              }
+            }
+          },
+          {
+            "name": "GET /cursos",
+            "request": {
+              "method": "GET",
+              "url": {
+                "raw": "http://localhost:3000/cursos",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "3000",
+                "path": ["cursos"]
+              }
+            }
+          },
+          {
+            "name": "GET /cursos/:id",
+            "request": {
+              "method": "GET",
+              "url": {
+                "raw": "http://localhost:3000/cursos/1",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "3000",
+                "path": ["cursos", "1"]
+              }
+            }
+          },
+          {
+            "name": "PUT /cursos/:id",
+            "request": {
+              "method": "PUT",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": {
+                "mode": "raw",
+                "raw": "{\n  \"nombre\": \"Curso 1 Actualizado\",\n  \"descripcion\": \"Descripción Actualizada del Curso 1\"\n}"
+              },
+              "url": {
+                "raw": "http://localhost:3000/cursos/1",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "3000",
+                "path": ["cursos", "1"]
+              }
+            }
+          },
+          {
+            "name": "DELETE /cursos/:id",
+            "request": {
+              "method": "DELETE",
+              "url": {
+                "raw": "http://localhost:3000/cursos/1",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "3000",
+                "path": ["cursos", "1"]
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "RecursoController",
+        "item": [
+          {
+            "name": "POST /recursos",
+            "request": {
+              "method": "POST",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": {
+                "mode": "raw",
+                "raw": "{\n  \"nombre\": \"Parcial 1\",\n  \"tipo\": \"pdf\",\n  \"cursoId\": 1\n}"
+              },
+              "url": {
+                "raw": "http://localhost:3000/recursos",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "3000",
+                "path": ["recursos"]
+              }
+            }
+          },
+          {
+            "name": "GET /recursos",
+            "request": {
+              "method": "GET",
+              "url": {
+                "raw": "http://localhost:3000/recursos",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "3000",
+                "path": ["recursos"]
+              }
+            }
+          },
+          {
+            "name": "GET /recursos/:id",
+            "request": {
+              "method": "GET",
+              "url": {
+                "raw": "http://localhost:3000/recursos/1",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "3000",
+                "path": ["recursos", "1"]
+              }
+            }
+          },
+          {
+            "name": "PUT /recursos/:id",
+            "request": {
+              "method": "PUT",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": {
+                "mode": "raw",
+                "raw": "{\n  \"nombre\": \"Parcial 1 Actualizado\",\n  \"tipo\": \"pdf\",\n  \"cursoId\": 1\n}"
+              },
+              "url": {
+                "raw": "http://localhost:3000/recursos/1",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "3000",
+                "path": ["recursos", "1"]
+              }
+            }
+          },
+          {
+            "name": "DELETE /recursos/:id",
+            "request": {
+              "method": "DELETE",
+              "url": {
+                "raw": "http://localhost:3000/recursos/1",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "3000",
+                "path": ["recursos", "1"]
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+  
